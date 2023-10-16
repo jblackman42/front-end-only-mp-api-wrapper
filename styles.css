@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  min-height: 100dvh;
+  margin: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+#error-container {
+  background-color: #fff;
+  /* padding: 30px 50px; */
+  padding: 0;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+  max-width: 90vw;
+}
+#error-container .header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #00000022;
+}
+#error-container .error-title {
+  margin: 0;
+  padding: .25rem .5rem;
+  font-size: 24px;
+  color: #e74c3c; /* Red color for error */
+}
+#error-container .error-close {
+  padding: 0 6px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+#error-container .error-description {
+  margin-block: 0;
+  padding-inline: .25rem;
+  padding-block: 1rem .5rem;
+  font-size: 16px;
+  color: #555;
+}
+#error-container::backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+
+
+#attendance-form-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: steelblue;
+}

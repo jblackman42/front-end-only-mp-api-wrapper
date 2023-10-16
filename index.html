@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <button onclick="User.login()">Login</button>
+  <button onclick="User.logout()">Logout</button>
+
+  <div id="attendance-form-container">
+    <form id="attendance-form">
+      <label for="attendance-year-input">Year:</label>
+      <select name="year" id="attendance-year-input"></select>
+
+      <label for="attendance-week-input">Weekend:</label>
+      <select name="week" id="attendance-week-input"></select>
+
+      <label for="attendance-event-input">Service:</label>
+      <select name="week" id="attendance-event-input"></select>
+      <input type="number" name="headcount" id="attendance-head-count" placeholder="Head Count">
+      <button type="submit">Save</button>
+    </form>
+  </div>
+
+
+  <script src="form.js"></script>
+</body>
+</html>
